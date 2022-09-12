@@ -8,6 +8,10 @@ import unittest
 
 import exercice
 
+# used for correction with rad -> degrees, 
+#   Since the implementation provided here is incorrect
+import _exercice_version_prof 
+
 
 class TestExercice(unittest.TestCase):
     def test_square_root(self):
@@ -73,8 +77,10 @@ class TestExercice(unittest.TestCase):
             minutes = (degrees % 1) * 60
             seconds = (minutes % 1) * 60
 
-            return degrees - minutes, minutes - seconds, seconds
-            
+            # this is blatantly incorrect
+            # return degrees - minutes, minutes - seconds, seconds
+            return _exercice_version_prof.to_degrees(rad)
+
         values = [2, -4, 5, 4.09]
 
         output = [exercice.to_degrees(v) for v in values]

@@ -1,0 +1,12 @@
+test_average (__main__.TestExercice) ... ok
+test_square (__main__.TestExercice) ... ok
+test_square_root (__main__.TestExercice) ... ok
+test_to_celsius (__main__.TestExercice) ... ok
+test_to_degrees (__main__.TestExercice) ... ok
+test_to_farenheit (__main__.TestExercice) ... ok
+test_to_radians (__main__.TestExercice) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK
